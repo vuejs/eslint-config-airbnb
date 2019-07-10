@@ -8,8 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuejs/vue-cli.git",
-    "directory": "packages/@vue/eslint-config-airbnb"
+    "url": "git+https://github.com/vuejs/eslint-config-airbnb.git"
   },
   "keywords": [
     "vue",
@@ -18,9 +17,9 @@
   "author": "Evan You",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vuejs/vue-cli/issues"
+    "url": "https://github.com/vuejs/eslint-config-airbnb/issues"
   },
-  "homepage": "https://github.com/vuejs/vue-cli/tree/dev/packages/@vue/eslint-config-airbnb#readme",
+  "homepage": "https://github.com/vuejs/eslint-config-airbnb#readme",
   "dependencies": {
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-import-resolver-webpack": "^0.11.1",

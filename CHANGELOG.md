@@ -1,8 +1,13 @@
-# 4.0.1
+## 5.0.0
+
+- [49bbed7](https://github.com/vuejs/eslint-config-airbnb/commit/49bbed7) update the base config to v14, supports eslint v6 and drops eslint v4 support
+- [5d5e048](https://github.com/vuejs/eslint-config-airbnb/commit/5d5e048) eslint-plugin-import is now a peer dependency
+
+## 4.0.1
 
 * [#3961](https://github.com/vuejs/vue-cli/pull/3961) airbnb lint should not warn on vuex state mutation ([@LinusBorg](https://github.com/LinusBorg))
 
-# 4.0.0
+## 4.0.0
 
 ### Chore
 

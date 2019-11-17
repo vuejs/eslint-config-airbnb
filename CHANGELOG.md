@@ -1,7 +1,8 @@
 ## 5.0.0
 
+- [9d93e6b](https://github.com/vuejs/eslint-config-airbnb/commit/9d93e6b) `@vue/cli-service` is required as a peer dependency
+- [5d5e048](https://github.com/vuejs/eslint-config-airbnb/commit/5d5e048) `eslint-plugin-import` is required as a peer dependency
 - [49bbed7](https://github.com/vuejs/eslint-config-airbnb/commit/49bbed7) update the base config to v14, supports eslint v6 and drops eslint v4 support
-- [5d5e048](https://github.com/vuejs/eslint-config-airbnb/commit/5d5e048) eslint-plugin-import is now a peer dependency
 
 ## 4.0.1
 

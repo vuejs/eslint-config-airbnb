@@ -1,3 +1,7 @@
+## 5.0.2
+
+- [f23bbcc](https://github.com/vuejs/eslint-config-airbnb/commit/f23bbcc) refactor: use full path for resolvers
+
 ## 5.0.1
 
 - [59a9528](https://github.com/vuejs/eslint-config-airbnb/commit/59a9528) fix: should not complain about node standard libraries

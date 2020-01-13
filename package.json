@@ -20,6 +20,9 @@
     "url": "https://github.com/vuejs/eslint-config-airbnb/issues"
   },
   "homepage": "https://github.com/vuejs/eslint-config-airbnb#readme",
+  "scripts": {
+    "test": "eslint . --no-fix"
+  },
   "dependencies": {
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-import-resolver-node": "^0.3.3",
@@ -30,5 +33,9 @@
     "@vue/cli-service": "^3.0.0 || ^4.0.0-0",
     "eslint": "^5.16.0 || ^6.1.0",
     "eslint-plugin-import": "^2.18.2"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.1.2",
+    "eslint": "^6.8.0"
   }
 }

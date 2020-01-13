@@ -1,3 +1,7 @@
+## 5.0.1
+
+- [59a9528](https://github.com/vuejs/eslint-config-airbnb/commit/59a9528) fix: should not complain about node standard libraries
+
 ## 5.0.0
 
 - [9d93e6b](https://github.com/vuejs/eslint-config-airbnb/commit/9d93e6b) `@vue/cli-service` is required as a peer dependency

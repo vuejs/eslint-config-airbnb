@@ -4,6 +4,8 @@ module.exports = {
   ],
   settings: {
     'import/resolver': {
+      // https://github.com/benmosher/eslint-plugin-import/issues/1396
+      node: {},
       webpack: {
         config: require.resolve('@vue/cli-service/webpack.config.js')
       }

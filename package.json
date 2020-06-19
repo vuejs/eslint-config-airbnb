@@ -36,6 +36,8 @@
   },
   "devDependencies": {
     "@vue/cli-service": "^4.1.2",
-    "eslint": "^6.8.0"
+    "eslint": "^6.8.0",
+    "vue-template-compiler": "^2.0.0",
+    "webpack": ">=1.11.0"
   }
 }

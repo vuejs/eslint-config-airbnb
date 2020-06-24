@@ -1,3 +1,8 @@
+## 5.1.0
+
+- [41753a6](https://github.com/vuejs/eslint-config-airbnb/commit/41753a6) feat: update deps, support eslint v7 and fix bugs 
+
+
 ## 5.0.2
 
 - [f23bbcc](https://github.com/vuejs/eslint-config-airbnb/commit/f23bbcc) refactor: use full path for resolvers

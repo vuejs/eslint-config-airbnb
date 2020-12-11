@@ -1,3 +1,8 @@
+## 5.3.0
+
+- [eed80e2](https://github.com/vuejs/eslint-config-airbnb/commit/eed80e2) chore: update eslint-import-resolver-webpack
+- [a7526f7](https://github.com/vuejs/eslint-config-airbnb/commit/a7526f7) feat: accept vue cli v5 alpha as peer dependency
+
 ## 5.1.0
 
 - [41753a6](https://github.com/vuejs/eslint-config-airbnb/commit/41753a6) feat: update deps, support eslint v7 and fix bugs 

@@ -34,6 +34,11 @@
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-plugin-import": "^2.25.3"
   },
+  "peerDependenciesMeta": {
+    "@vue/cli-service": {
+      "optional": true
+    }
+  },
   "devDependencies": {
     "@vue/cli-service": "^5.0.0-rc.0",
     "eslint": "^8.2.0"

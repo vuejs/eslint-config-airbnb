@@ -1,3 +1,9 @@
+## 6.0.0
+
+- [cbf533a](https://github.com/vuejs/eslint-config-airbnb/commit/cbf533a) feat!: update [base config to v15](https://github.com/airbnb/javascript/blob/d8cb404da74c302506f91e5928f30cc75109e74d/packages/eslint-config-airbnb-base/CHANGELOG.md#1500--2021-11-08), supporting eslint 8
+- [fcd8c1b](https://github.com/vuejs/eslint-config-airbnb/commit/fcd8c1b) feat: make `@vue/cli-service` an optional peer dependency
+- [4093ced](https://github.com/vuejs/eslint-config-airbnb/commit/4093ced) feat: add [`eslint-plugin-vuejs-accessibility`](https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility)
+
 ## 5.3.0
 
 - [eed80e2](https://github.com/vuejs/eslint-config-airbnb/commit/eed80e2) chore: update eslint-import-resolver-webpack

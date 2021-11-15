@@ -4,7 +4,7 @@ const importResolver = {
 };
 
 try {
-  const vueCliConfig = require.resolve('@vue/cli-service/webpack.config.js')
+  const vueCliConfig = require.resolve('@vue/cli-service/webpack.config.js');
   importResolver[require.resolve('eslint-import-resolver-webpack')] = {
     config: vueCliConfig,
   };
@@ -14,7 +14,8 @@ try {
 
 module.exports = {
   extends: [
-    require.resolve('eslint-config-airbnb-base'),
+    'airbnb-base',
+    'plugin:vuejs-accessibility/recommended',
   ],
   settings: {
     'import/resolver': importResolver,
@@ -34,6 +35,10 @@ module.exports = {
       ts: 'never',
       tsx: 'never',
     }],
+
+    // https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility/issues/97
+    'vuejs-accessibility/no-onchange': 'off',
+
     'no-param-reassign': ['error', {
       props: true,
       ignorePropertyModificationsFor: [

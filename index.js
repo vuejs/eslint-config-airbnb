@@ -11,7 +11,12 @@ try {
 } catch (e) {
   // ignore
 }
-
+try{
+  require.resolve('vite');
+  importResolver[require.resolve('eslint-import-resolver-vite-ts')]={
+  };
+} catch(e){
+}
 module.exports = {
   extends: [
     'airbnb-base',

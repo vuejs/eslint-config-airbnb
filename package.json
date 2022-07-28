@@ -1,48 +1,6 @@
 {
-  "name": "@vue/eslint-config-airbnb",
-  "version": "6.0.0",
-  "description": "eslint-config-airbnb for Vue CLI",
-  "main": "index.js",
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vuejs/eslint-config-airbnb.git"
-  },
-  "keywords": [
-    "vue",
-    "cli"
-  ],
-  "author": "Evan You",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vuejs/eslint-config-airbnb/issues"
-  },
-  "homepage": "https://github.com/vuejs/eslint-config-airbnb#readme",
-  "scripts": {
-    "test": "eslint . --no-fix"
-  },
-  "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-import-resolver-node": "^0.3.6",
-    "eslint-import-resolver-webpack": "^0.13.2",
-    "eslint-plugin-import": "^2.25.3"
-  },
-  "peerDependencies": {
-    "@vue/cli-service": "^4.0.0-0 || ^5.0.0-0",
-    "eslint": "^7.32.0 || ^8.2.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-vuejs-accessibility": "^1.1.0"
-  },
-  "peerDependenciesMeta": {
-    "@vue/cli-service": {
-      "optional": true
-    }
-  },
+  "private": true,
   "devDependencies": {
-    "@vue/cli-service": "^5.0.0-rc.0",
-    "eslint": "^8.2.0",
-    "eslint-plugin-vuejs-accessibility": "^1.1.0"
+    "@changesets/cli": "^2.23.2"
   }
 }

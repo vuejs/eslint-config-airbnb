@@ -57,7 +57,8 @@ module.exports = {
 
     // Enforce that a label tag has a text label and an associated control.
     // https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility/blob/main/docs/label-has-for.md
-    // TODO: should migrate once https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility/issues/54 is resolved
+    // TODO: (semver-major)
+    // should migrate once https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility/issues/54 is resolved
     'vuejs-accessibility/label-has-for': ['error', {
       // https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility/issues/119#issuecomment-787999600
       required: {
@@ -105,7 +106,8 @@ module.exports = {
     // https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility/blob/main/docs/tabindex-no-positive.md
     'vuejs-accessibility/tabindex-no-positive': 'error',
 
-    // TODO: open feature requests for the following missing rules:
+    // TODO: (semver-major)
+    // open feature requests for the following missing rules:
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-activedescendant-has-tabindex.md
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-proptypes.md

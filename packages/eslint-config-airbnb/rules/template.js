@@ -16,7 +16,7 @@ module.exports = {
     // Apply the style rules in airbnb to expressions in `<template>` too.
     ...vueStyleRules,
 
-    // TODO: follow similar styles in <template> as airbnb requires in JSX
+    // Follow similar styles in <template> as airbnb requires in JSX
     // https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/rules/react.js
 
     // https://eslint.vuejs.org/rules/html-indent.html
@@ -45,7 +45,7 @@ module.exports = {
     }],
 
     // https://eslint.vuejs.org/rules/component-name-in-template-casing.html
-    // TODO: enable it later?
+    // TODO: (semver-major) enable it later?
     // At this point the community seems to have a majority preference for `kebab-case`.
     // Turning this on may cause too many inconvenience.
 
@@ -58,7 +58,7 @@ module.exports = {
     //   e.g. `<br>`, `<img>`, `<input>`
     // Considering it's already common in the community to use `<img src="..." />`,
     // I decided to relax it a little bit for now.
-    // TODO: discuss and decide on the future behavior.
+    // TODO: (semver-major) discuss and decide on the future behavior.
     'vue/html-self-closing': ['error', {
       html: {
         void: 'any',
@@ -76,7 +76,8 @@ module.exports = {
 
     // https://eslint.vuejs.org/rules/no-template-target-blank.html
     'vue/no-template-target-blank': ['error', {
-      // TODO: default to true once Vue 2 reaches EOL (so that IE support is dropped)
+      // TODO: (semver-minor)
+      // default to true once Vue 2 reaches EOL (so that IE support is dropped)
       allowReferrer: false,
 
       enforceDynamicLinks: 'always',

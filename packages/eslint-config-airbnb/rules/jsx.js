@@ -126,7 +126,8 @@ module.exports = {
     // Disallow target="_blank" on links
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
     'react/jsx-no-target-blank': ['error', {
-      // TODO: default to true once Vue 2 reaches EOL (so that IE support is dropped)
+      // TODO: (semver-minor)
+      // default to true once Vue 2 reaches EOL (so that IE support is dropped)
       allowReferrer: false,
 
       enforceDynamicLinks: 'always',

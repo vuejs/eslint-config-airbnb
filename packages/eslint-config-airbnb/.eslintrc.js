@@ -32,8 +32,9 @@ module.exports = {
       ],
     }],
 
-    // FIXME:
+    // TODO: (semver-minor)
     // I think we should allow for-of
     // https://github.com/airbnb/javascript/blob/cbf9ade10a2f6f06c9da6dbfa25b344bee4bbef6/packages/eslint-config-airbnb-base/rules/style.js#L331-L351
+    // But it is really slow, even in modern browsers: https://bugs.chromium.org/p/v8/issues/detail?id=13157
   },
 };

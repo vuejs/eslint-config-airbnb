@@ -3,6 +3,13 @@
   "version": "6.0.0",
   "description": "eslint-config-standard for Vue.js projects",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./createAliasSetting": "./createAliasSetting.js",
+    "./package.json": "./package.json",
+
+    "./rules/imports": "./rules/imports.js"
+  },
   "publishConfig": {
     "access": "public"
   },

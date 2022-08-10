@@ -12,6 +12,13 @@ module.exports = {
 
     require.resolve('./rules/misc.js'),
   ],
+
+  parserOptions: {
+    // Should be at least 2022 to support top-level await in `<script setup>`
+    // https://eslint.vuejs.org/user-guide/#using-eslint-v8-x
+    ecmaVersion: 'latest',
+  },
+
   rules: {
     // rule: https://eslint.org/docs/rules/no-param-reassign.html
     'no-param-reassign': ['error', {

@@ -1,11 +1,10 @@
-# @vue/eslint-config-airbnb
+# ESLint [Shareable Configs](http://eslint.org/docs/developer-guide/shareable-configs) for [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript#readme) in [Vue.js](https://vuejs.org/) Projects
 
-> eslint-config-airbnb for Vue CLI
+## Usage
 
-This config is specifically designed to be used by Vue CLI setups
-and is not meant for outside use (it can be used but some adaptations
-on the user side might be needed - for details see the config file).
+This repo contains 2 packages:
 
-A part of its design is that this config may implicitly depend on
-other parts of Vue CLI setups, such as `eslint-plugin-vue` being
-extended in the same resulting config.
+- If you are using ESLint in a JavaScript-only project, check the documentation of [`@vue/eslint-config-airbnb`](./packages/eslint-config-airbnb#readme)
+- If you are using ESLint in a TypeScript project, check the documentation of [`@vue/eslint-config-airbnb-with-typescript`](./packages/eslint-config-airbnb-with-typescript#readme)
+
+The [`examples` folder](./examples/) contains example ESLint configurations in projects created by `create-vue` or `@vue/cli`.

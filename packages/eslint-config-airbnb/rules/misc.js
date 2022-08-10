@@ -18,6 +18,6 @@ module.exports = {
     // https://eslint.vuejs.org/rules/no-setup-props-destructure.html
     // (The rule is already in `plugin:vue/essential` and `plugin:vue/vue3-essential` ruleset.)
     // Corresponding to `react/destructuring-assignment` but the requirement in Vue is the contrary:
-    'vue/no-setup-props-destructure': 'error'
+    'vue/no-setup-props-destructure': 'error',
   },
 };

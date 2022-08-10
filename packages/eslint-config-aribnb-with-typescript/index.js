@@ -1,8 +1,22 @@
 const { defineConfig } = require('eslint-define-config');
 const upstreamConfig = require('eslint-config-airbnb-typescript/lib/shared');
 
+// There are two categories of TS rules in the upstream config:
+// 1. `@typescript-eslint/` versions of built-in eslint rules;
+// 2. turning off unnecessary rules that are covered by TypeScript type-checking.
+//
+// We choose to not directly extend from the upstream ruleset.
+// Rather, we manually apply all these rules to ['*.ts', '*.tsx'] only
+// Because it doesn't make sense to apply all these rules to all files.
+// For example, the `@typescript-eslint/naming-convention` rule requires type information of a file.
+// But in a typical TypeScript project, even if it sets `allowJs: true`,
+// it's not likely to include `.eslintrc.js` in its `tsconfig.json`,
+// therefore making the `.eslintrc.js` file lack of type information, causing linting to fail.
 const tsOverride = upstreamConfig.overrides.find((override) => override.files.includes('*.ts'));
-const tsAirbnbRules = tsOverride.rules;
+const tsAirbnbRules = {
+  ...upstreamConfig.rules,
+  ...tsOverride.rules,
+};
 
 const { rules: baseImportsRules } = require('@vue/eslint-config-airbnb/rules/imports');
 
@@ -11,8 +25,8 @@ const createAliasSetting = require('./createAliasSetting');
 module.exports = defineConfig({
   extends: [
     require.resolve('@vue/eslint-config-airbnb'),
-    require.resolve('eslint-config-airbnb-typescript'),
   ],
+  plugins: ['@typescript-eslint'],
 
   parser: require.resolve('vue-eslint-parser'),
   parserOptions: {
@@ -30,6 +44,8 @@ module.exports = defineConfig({
 
     // A list of file extensions that will be parsed as modules and inspected for exports.
     'import/extensions': ['.mjs', '.js', '.jsx', '.mts', '.ts', '.tsx'],
+
+    'import/external-module-folders': ['node_modules', 'node_modules/@types'],
 
     'import/parsers': {
       '@typescript-eslint/parser': ['.mts', '.ts', '.tsx', '.d.ts'],
@@ -87,6 +103,10 @@ module.exports = defineConfig({
 
   overrides: [
     {
+      files: ['*.ts', '*.tsx', '*.vue'],
+      rules: tsAirbnbRules,
+    },
+    {
       files: ['*.vue'],
       rules: {
         'vue/block-lang': [
@@ -103,9 +123,6 @@ module.exports = defineConfig({
             },
           },
         ],
-
-        // apply the overrides of `.ts` to `.vue`, too
-        ...tsAirbnbRules,
       },
     },
 

@@ -13,9 +13,6 @@ module.exports = function createAliasSetting(
     'import/resolver': {
       // The Node resolver must come first
       // https://github.com/benmosher/eslint-plugin-import/issues/1396
-      // TODO: Not sure if `.mjs` and `.mts` should be included here.
-      // Because typically, when we use them in a relative import, we are not using a bundler.
-      // When without a bundler, both Node.js and the browser require us to use the full path.
       [require.resolve('eslint-import-resolver-node')]: {
         extensions: [
           '.mts',

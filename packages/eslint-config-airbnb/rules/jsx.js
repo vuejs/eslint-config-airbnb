@@ -126,9 +126,9 @@ module.exports = {
     // Disallow target="_blank" on links
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
     'react/jsx-no-target-blank': ['error', {
-      // TODO: (semver-minor)
-      // default to true once Vue 2 reaches EOL (so that IE support is dropped)
-      allowReferrer: false,
+      // Unllike in the `airbnb-base` ruleset, this is set to `true`,
+      // Because neither Vue CLI & Vite targets IE 11 by default.
+      allowReferrer: true,
 
       enforceDynamicLinks: 'always',
     }],

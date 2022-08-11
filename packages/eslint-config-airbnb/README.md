@@ -67,3 +67,6 @@ module.exports = {
 ```
 
 `createAliasSetting` accepts a map of aliases and their corresponding paths, and returns a settings object to be spread in to the `settings` field of the ESLint config.
+
+## IE 11 support
+

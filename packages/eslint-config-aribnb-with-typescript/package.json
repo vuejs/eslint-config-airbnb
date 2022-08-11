@@ -5,6 +5,7 @@
   "main": "index.js",
   "exports": {
     ".": "./index.js",
+    "./ie11": "./ie11.js",
     "./allow-js-in-vue": "./allow-js-in-vue.js",
     "./allow-tsx-in-vue": "./allow-tsx-in-vue.js",
     "./allow-jsx-in-vue": "./allow-jsx-in-vue.js",
@@ -32,13 +33,13 @@
   },
   "homepage": "https://github.com/vuejs/eslint-config-airbnb/blob/main/packages/eslint-config-airbnb-with-typescript#readme",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.30.7",
-    "@typescript-eslint/parser": "^5.30.7",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
     "@vue/eslint-config-airbnb": "workspace:^",
     "eslint-config-airbnb-typescript": "17.0.0",
-    "eslint-define-config": "^1.5.1",
+    "eslint-define-config": "^1.6.0",
     "eslint-import-resolver-node": "^0.3.6",
-    "eslint-import-resolver-typescript": "^3.3.0",
+    "eslint-import-resolver-typescript": "^3.4.0",
     "eslint-plugin-import": "^2.26.0",
     "vue-eslint-parser": "^9.0.3"
   },
@@ -48,8 +49,8 @@
     "typescript": "*"
   },
   "devDependencies": {
-    "eslint": "^8.2.0",
-    "eslint-plugin-vue": "^9.2.0",
+    "eslint": "^8.21.0",
+    "eslint-plugin-vue": "^9.3.0",
     "typescript": "~4.7.4"
   },
   "eslintConfig": {

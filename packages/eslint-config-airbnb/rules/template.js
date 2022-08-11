@@ -76,9 +76,9 @@ module.exports = {
 
     // https://eslint.vuejs.org/rules/no-template-target-blank.html
     'vue/no-template-target-blank': ['error', {
-      // TODO: (semver-minor)
-      // default to true once Vue 2 reaches EOL (so that IE support is dropped)
-      allowReferrer: false,
+      // Unllike in the `airbnb-base` ruleset, this is set to `true`,
+      // Because neither Vue CLI & Vite targets IE 11 by default.
+      allowReferrer: true,
 
       enforceDynamicLinks: 'always',
     }],

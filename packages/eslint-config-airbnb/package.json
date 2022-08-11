@@ -5,9 +5,9 @@
   "main": "index.js",
   "exports": {
     ".": "./index.js",
+    "./ie11": "./ie11.js",
     "./createAliasSetting": "./createAliasSetting.js",
     "./package.json": "./package.json",
-
     "./rules/imports": "./rules/imports.js"
   },
   "publishConfig": {
@@ -47,7 +47,7 @@
     "eslint-plugin-vue": "^9.2.0"
   },
   "devDependencies": {
-    "eslint": "^8.2.0",
-    "eslint-plugin-vue": "^9.2.0"
+    "eslint": "^8.21.0",
+    "eslint-plugin-vue": "^9.3.0"
   }
 }

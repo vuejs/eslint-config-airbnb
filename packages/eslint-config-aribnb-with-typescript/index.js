@@ -22,6 +22,58 @@ const { rules: baseImportsRules } = require('@vue/eslint-config-airbnb/rules/imp
 
 const createAliasSetting = require('./createAliasSetting');
 
+// The following rules are extracted because we need to declare them twice:
+// once globally, once in `overrides` for TypeScript files,
+// to ensure it overrides the ones defined in the upstream `airbnb-typescript` config.
+const ruleOverrides = defineConfig({
+  // Until https://github.com/airbnb/javascript/pull/2623 is released
+  'no-spaced-func': 'off',
+
+  // TypeScript compilation already ensures that named imports exist in the referenced module
+  // Shouldn't be re-enabled even for `allow-js-in-vue` ruleset because of https://github.com/import-js/eslint-import-resolver-typescript/issues/31
+  'import/named': 'off',
+
+  // https://github.com/airbnb/javascript/blob/cbf9ade10a2f6f06c9da6dbfa25b344bee4bbef6/packages/eslint-config-airbnb-base/rules/imports.js#L138-L144
+  // https://github.com/iamturns/eslint-config-airbnb-typescript/blob/91fd090f6fdd8d598a6ac6e9bb2c2ba33014e425/lib/shared.js#L230-L240
+  'import/extensions': ['error', 'ignorePackages', {
+    js: 'never',
+    mjs: 'never',
+    jsx: 'never',
+    ts: 'never',
+    tsx: 'never',
+    mts: 'never',
+    // Cannot omit `.vue` extensions.
+    // This should be enforced all across the Vue.js ecosystem.
+    vue: 'always',
+  }],
+
+  // Append 'ts' and 'tsx' extensions to Airbnb 'import/no-extraneous-dependencies' rule
+  'import/no-extraneous-dependencies': [
+    baseImportsRules['import/no-extraneous-dependencies'][0],
+    {
+      ...baseImportsRules['import/no-extraneous-dependencies'][1],
+      devDependencies: baseImportsRules[
+        'import/no-extraneous-dependencies'
+      ][1].devDependencies.reduce((result, devDep) => {
+        const toAppend = [devDep];
+        const devDepWithTs = devDep.replace(/\bjs(x?)\b/g, 'ts$1');
+        if (devDepWithTs !== devDep) {
+          toAppend.push(devDepWithTs);
+        }
+        return [...result, ...toAppend];
+      }, []),
+    },
+  ],
+
+  // only .jsx & .tsx files may have JSX
+  // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+  'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
+
+  // TODO: (semver-minor)
+  // Disable some unnecessary jsx rules that can be covered by TypeScript
+  // https://github.com/iamturns/eslint-config-airbnb-typescript/issues/273
+});
+
 module.exports = defineConfig({
   extends: [
     require.resolve('@vue/eslint-config-airbnb'),
@@ -53,58 +105,16 @@ module.exports = defineConfig({
   },
 
   rules: {
-    // Until https://github.com/airbnb/javascript/pull/2623 is merged and released
-    'no-spaced-func': 'off',
-
-    // TypeScript compilation already ensures that named imports exist in the referenced module
-    // Shouldn't be re-enabled even for `allow-js-in-vue` ruleset because of https://github.com/import-js/eslint-import-resolver-typescript/issues/31
-    'import/named': 'off',
-
-    // https://github.com/airbnb/javascript/blob/cbf9ade10a2f6f06c9da6dbfa25b344bee4bbef6/packages/eslint-config-airbnb-base/rules/imports.js#L138-L144
-    // https://github.com/iamturns/eslint-config-airbnb-typescript/blob/91fd090f6fdd8d598a6ac6e9bb2c2ba33014e425/lib/shared.js#L230-L240
-    'import/extensions': ['error', 'ignorePackages', {
-      js: 'never',
-      mjs: 'never',
-      jsx: 'never',
-      ts: 'never',
-      tsx: 'never',
-      mts: 'never',
-      // Cannot omit `.vue` extensions.
-      // This should be enforced all across the Vue.js ecosystem.
-      vue: 'always',
-    }],
-
-    // Append 'ts' and 'tsx' extensions to Airbnb 'import/no-extraneous-dependencies' rule
-    'import/no-extraneous-dependencies': [
-      baseImportsRules['import/no-extraneous-dependencies'][0],
-      {
-        ...baseImportsRules['import/no-extraneous-dependencies'][1],
-        devDependencies: baseImportsRules[
-          'import/no-extraneous-dependencies'
-        ][1].devDependencies.reduce((result, devDep) => {
-          const toAppend = [devDep];
-          const devDepWithTs = devDep.replace(/\bjs(x?)\b/g, 'ts$1');
-          if (devDepWithTs !== devDep) {
-            toAppend.push(devDepWithTs);
-          }
-          return [...result, ...toAppend];
-        }, []),
-      },
-    ],
-
-    // only .jsx & .tsx files may have JSX
-    // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-    'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
-
-    // TODO: (semver-minor)
-    // Disable some unnecessary jsx rules that can be covered by TypeScript
-    // https://github.com/iamturns/eslint-config-airbnb-typescript/issues/273
+    ...ruleOverrides,
   },
 
   overrides: [
     {
       files: ['*.ts', '*.tsx', '*.vue'],
-      rules: tsAirbnbRules,
+      rules: {
+        ...tsAirbnbRules,
+        ...ruleOverrides,
+      },
     },
     {
       files: ['*.vue'],

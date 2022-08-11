@@ -1,13 +1,60 @@
 const { rules: baseStyleRules } = require('eslint-config-airbnb-base/rules/style');
-const allVueRules = require('eslint-plugin-vue').rules;
+
+// Most extension rules in `eslint-plugin-vue` are only wrapped core ESLint rules
+// Except for `max-len` and `no-irregular-whitespace`, which are replacements.
+const styleRulesToExtend = [
+  'array-bracket-newline',
+  'array-bracket-spacing',
+  'arrow-spacing',
+  'block-spacing',
+  'brace-style',
+  'camelcase',
+  'comma-dangle',
+  'comma-spacing',
+  'comma-style',
+  'dot-location',
+  'dot-notation',
+  'eqeqeq',
+  'func-call-spacing',
+  'key-spacing',
+  'keyword-spacing',
+  'no-constant-condition',
+  'no-empty-pattern',
+  'no-extra-parens',
+  'no-loss-of-precision',
+  'no-restricted-syntax',
+  'no-sparse-arrays',
+  'no-useless-concat',
+  'object-curly-newline',
+  'object-curly-spacing',
+  'object-property-newline',
+  'object-shorthand',
+  'operator-linebreak',
+  'prefer-template',
+  'quote-props',
+  'space-in-parens',
+  'space-infix-ops',
+  'space-unary-ops',
+  'template-curly-spacing',
+];
+
+const styleRulesToReplace = [
+  'max-len',
+  'no-irregular-whitespace',
+];
 
 const vueStyleRules = {};
-// eslint-disable-next-line no-restricted-syntax
-for (const [name, config] of Object.entries(baseStyleRules)) {
-  if (name in allVueRules) {
-    vueStyleRules[`vue/${name}`] = config;
+styleRulesToExtend.forEach((name) => {
+  if (baseStyleRules[name]) {
+    vueStyleRules[`vue/${name}`] = baseStyleRules[name];
   }
-}
+});
+styleRulesToReplace.forEach((name) => {
+  if (baseStyleRules[name]) {
+    vueStyleRules[name] = 'off'; // disable the original rule
+    vueStyleRules[`vue/${name}`] = baseStyleRules[name];
+  }
+});
 
 module.exports = {
   plugins: ['vue'],
@@ -15,6 +62,22 @@ module.exports = {
   rules: {
     // Apply the style rules in airbnb to expressions in `<template>` too.
     ...vueStyleRules,
+
+    // `vue/max-len` needs special configuration for better usability
+    'vue/max-len': ['error', 100, 2, {
+      ignoreUrls: true,
+      ignoreComments: false,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+
+      // 1. it's like `ignoreStrings`
+      // 2. SVG `path`s should be ignored
+      ignoreHTMLAttributeValues: true,
+      // Because spaces in HTML are insignificant,
+      // it shouldn't be hard to start a new line for text content
+      ignoreHTMLTextContents: false,
+    }],
 
     // Follow similar styles in <template> as airbnb requires in JSX
     // https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/rules/react.js

@@ -1,6 +1,6 @@
 {
   "private": true,
   "devDependencies": {
-    "@changesets/cli": "^2.23.2"
+    "@changesets/cli": "^2.24.2"
   }
 }

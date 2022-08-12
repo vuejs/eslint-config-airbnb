@@ -20,7 +20,7 @@
     "@vue/cli-plugin-router": "~5.0.8",
     "@vue/cli-plugin-typescript": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
-    "@vue/eslint-config-airbnb-with-typescript": "workspace:^",
+    "@vue/eslint-config-airbnb-with-typescript": "workspace:*",
     "eslint": "^8.21.0",
     "eslint-plugin-vue": "^9.3.0",
     "typescript": "~4.5.5"

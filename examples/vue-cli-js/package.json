@@ -19,7 +19,7 @@
     "@vue/cli-plugin-eslint": "~5.0.8",
     "@vue/cli-plugin-router": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
-    "@vue/eslint-config-airbnb": "workspace:^",
+    "@vue/eslint-config-airbnb": "workspace:*",
     "eslint": "^8.21.0",
     "eslint-plugin-vue": "^9.3.0"
   }

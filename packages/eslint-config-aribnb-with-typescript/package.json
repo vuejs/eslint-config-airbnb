@@ -5,7 +5,6 @@
   "main": "index.js",
   "exports": {
     ".": "./index.js",
-    "./ie11": "./ie11.js",
     "./allow-js-in-vue": "./allow-js-in-vue.js",
     "./allow-tsx-in-vue": "./allow-tsx-in-vue.js",
     "./allow-jsx-in-vue": "./allow-jsx-in-vue.js",

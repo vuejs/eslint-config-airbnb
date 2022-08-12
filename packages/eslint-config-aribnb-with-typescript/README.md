@@ -123,6 +123,27 @@ module.exports = {
 }
 ```
 
+## IE 11 support
+
+IE 11 reached End-of-Life on June 15, 2022, so this configuration doesn't include any rules that are specific to IE 11.
+
+If your project still has to support IE 11, we recommend you to add the following 2 rules to your config:
+
+```js
+module.exports = {
+   // ...
+
+   rules: {
+    // Enforce `rel="noopener noreferrer"` on external links in `<template>`
+    // https://eslint.vuejs.org/rules/no-template-target-blank.html
+    'vue/no-template-target-blank': 'error',
+    // Enforce `rel="noopener noreferrer"` on external links in JSX
+    // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
+    'react/jsx-no-target-blank': 'error',
+   }
+}
+```
+
 ## Further Improvements
 
 It seems possible to lift the TSX/JSX restriction in `.vue` files without disabling the type-aware linting rules.

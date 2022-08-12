@@ -2,8 +2,8 @@ const { defineConfig } = require('eslint-define-config');
 
 module.exports = defineConfig({
   extends: [
-    './allow-js-in-vue.cjs',
-    './allow-tsx-in-vue.cjs',
+    require.resolve('./allow-js-in-vue'),
+    require.resolve('./allow-tsx-in-vue'),
   ],
   overrides: [
     {

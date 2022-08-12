@@ -3,7 +3,7 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   setup() {
-    return () => <div>JsxInVue</div>;
+    // return () => <div>JsxInVue</div>;
   },
 });
 </script>

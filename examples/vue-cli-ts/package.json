@@ -15,6 +15,7 @@
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@rushstack/eslint-patch": "^1.1.4",
+    "@types/webpack-env": "^1.17.0",
     "@vue/cli-plugin-babel": "~5.0.8",
     "@vue/cli-plugin-eslint": "~5.0.8",
     "@vue/cli-plugin-router": "~5.0.8",

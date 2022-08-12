@@ -254,6 +254,7 @@ importers:
       '@babel/core': ^7.18.10
       '@rushstack/eslint-patch': ^1.1.4
       '@types/jest': ^27.5.2
+      '@types/webpack-env': ^1.17.0
       '@vue/cli-plugin-babel': ~5.0.8
       '@vue/cli-plugin-e2e-cypress': ~5.0.8
       '@vue/cli-plugin-eslint': ~5.0.8
@@ -263,7 +264,7 @@ importers:
       '@vue/cli-plugin-unit-jest': ~5.0.8
       '@vue/cli-plugin-vuex': ~5.0.8
       '@vue/cli-service': ~5.0.8
-      '@vue/eslint-config-airbnb-with-typescript': workspace:^
+      '@vue/eslint-config-airbnb-with-typescript': workspace:*
       '@vue/test-utils': ^2.0.2
       '@vue/vue3-jest': ^27.0.0
       babel-jest: ^27.5.1
@@ -289,6 +290,7 @@ importers:
       '@babel/core': 7.18.10
       '@rushstack/eslint-patch': 1.1.4
       '@types/jest': 27.5.2
+      '@types/webpack-env': 1.17.0
       '@vue/cli-plugin-babel': 5.0.8_2siogx5p3s7hfpnhjofuerri2e
       '@vue/cli-plugin-e2e-cypress': 5.0.8_wwrrnuibcugtipoepqbmsgvxia
       '@vue/cli-plugin-eslint': 5.0.8_iiqyrfrbrrb6gw4o2brvopmrqa
@@ -343,12 +345,13 @@ importers:
     specifiers:
       '@babel/core': ^7.18.10
       '@rushstack/eslint-patch': ^1.1.4
+      '@types/webpack-env': ^1.17.0
       '@vue/cli-plugin-babel': ~5.0.8
       '@vue/cli-plugin-eslint': ~5.0.8
       '@vue/cli-plugin-router': ~5.0.8
       '@vue/cli-plugin-typescript': ~5.0.8
       '@vue/cli-service': ~5.0.8
-      '@vue/eslint-config-airbnb-with-typescript': workspace:^
+      '@vue/eslint-config-airbnb-with-typescript': workspace:*
       core-js: ^3.24.1
       eslint: ^8.21.0
       eslint-plugin-vue: ^9.3.0
@@ -362,6 +365,7 @@ importers:
     devDependencies:
       '@babel/core': 7.18.10
       '@rushstack/eslint-patch': 1.1.4
+      '@types/webpack-env': 1.17.0
       '@vue/cli-plugin-babel': 5.0.8_2siogx5p3s7hfpnhjofuerri2e
       '@vue/cli-plugin-eslint': 5.0.8_iiqyrfrbrrb6gw4o2brvopmrqa
       '@vue/cli-plugin-router': 5.0.8_@vue+cli-service@5.0.8
@@ -6764,6 +6768,18 @@ packages:
       debug: 4.3.2
     dev: true
 
+  /follow-redirects/1.15.1_debug@4.3.4:
+    resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dependencies:
+      debug: 4.3.4
+    dev: true
+
   /forever-agent/0.6.1:
     resolution: {integrity: sha512-j0KLYPhm6zeac4lz3oJ3o65qvgQCcPubiyotZrXqEaG4hNagNYO8qdlUrX5vwqv9ohqeT/Z3j6+yW067yWWdUw==}
     dev: true
@@ -7266,7 +7282,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.1_debug@4.3.2
+      follow-redirects: 1.15.1_debug@4.3.4
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug

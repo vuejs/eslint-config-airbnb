@@ -51,6 +51,7 @@ module.exports = {
           // Cypress
           '**/cypress.config.*(c|m)js',
           '**/cypress/support/**',
+          '**/*.cy.{js,jsx}',
           // Playwright, only supports `.js` & `.mjs`
           // https://github.com/microsoft/playwright/blob/v1.24.0/packages/playwright-test/src/runner.ts#L52
           '**/playwright.config.*(m)js',

@@ -123,6 +123,39 @@ module.exports = {
 }
 ```
 
+## `Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.`
+
+If you are using this config in an existing project, you may encounter this error:
+
+```text
+Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
+The file does not match your project config: foo.js.
+The file must be included in at least one of the projects provided
+```
+
+It is likely because your existing `tsconfig.json` does not include all of the files you would like to lint.
+
+(This doesn't usually happen in projects created by [`create-vue`](https://github.com/vuejs/create-vue) because it creates projects with [solution-style `tsconfig.json` files](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-9.html#support-for-solution-style-tsconfigjson-files) that cover every file in the project.)
+
+A workaround is to create a separate `tsconfig.eslint.json` as follows:
+
+```json
+{
+  // Extend your base config so you don't have to redefine your compilerOptions
+  "extends": "./tsconfig.json",
+  "include": [
+    // Include all files in the project
+    "./**/*",
+    // By default the `include` glob pattern doesn't match `.vue` files, so we add it explicitly
+    "./**/*.vue"
+  ],
+  "compilerOptions": {
+    // Include `.js` & `.jsx` extensions
+    "allowJs": true
+  }
+}
+```
+
 ## IE 11 support
 
 IE 11 reached End-of-Life on June 15, 2022, so this configuration doesn't include any rules that are specific to IE 11.

@@ -36,10 +36,9 @@ module.exports = {
 
 ## Aliases
 
-By default, none of the built-in rules require you to configure aliases in ESLint.
+The base airbnb config includes rules that need to actually resolve the imported module on the filesystem, such as [`import/no-unresolved`](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unresolved.md).
 
-But if you want to enable some additional rules that need to actually resolve the imported module on the filesystem (e.g. [`import/no-unresolved`](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unresolved.md)) by yourself, you should configure it.
-In that case, we provided a helper function to simplify the task.
+If you use aliases in your project, you need to configure ESLint to resolve the aliases, and we've provided a helper function for the task.
 
 For example, it is a widely accepted convention to use `@` as an alias to the `src` folder in the Vue ecosystem. To enable this, you can use the following config:
 

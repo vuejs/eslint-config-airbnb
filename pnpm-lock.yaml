@@ -13,7 +13,7 @@ importers:
       '@rushstack/eslint-patch': ^1.1.4
       '@vitejs/plugin-vue': ^3.0.2
       '@vitejs/plugin-vue-jsx': ^2.0.0
-      '@vue/eslint-config-airbnb': workspace:^
+      '@vue/eslint-config-airbnb': workspace:*
       eslint: ^8.21.0
       eslint-plugin-vue: ^9.3.0
       pinia: ^2.0.18
@@ -39,7 +39,7 @@ importers:
       '@types/node': ^16.11.48
       '@vitejs/plugin-vue': ^3.0.2
       '@vitejs/plugin-vue-jsx': ^2.0.0
-      '@vue/eslint-config-airbnb-with-typescript': workspace:^
+      '@vue/eslint-config-airbnb-with-typescript': workspace:*
       '@vue/tsconfig': ^0.1.3
       eslint: ^8.21.0
       eslint-plugin-vue: ^9.3.0
@@ -59,7 +59,7 @@ importers:
       '@types/node': 16.11.48
       '@vitejs/plugin-vue': 3.0.2_vite@3.0.6+vue@3.2.37
       '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.6+vue@3.2.37
-      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-aribnb-with-typescript
+      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-airbnb-with-typescript
       '@vue/tsconfig': 0.1.3_@types+node@16.11.48
       eslint: 8.21.0
       eslint-plugin-vue: 9.3.0_eslint@8.21.0
@@ -74,7 +74,7 @@ importers:
       '@types/node': ^16.11.48
       '@vitejs/plugin-vue': ^3.0.2
       '@vitejs/plugin-vue-jsx': ^2.0.0
-      '@vue/eslint-config-airbnb-with-typescript': workspace:^
+      '@vue/eslint-config-airbnb-with-typescript': workspace:*
       '@vue/tsconfig': ^0.1.3
       eslint: ^8.21.0
       eslint-plugin-vue: ^9.3.0
@@ -94,7 +94,7 @@ importers:
       '@types/node': 16.11.48
       '@vitejs/plugin-vue': 3.0.2_vite@3.0.6+vue@3.2.37
       '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.6+vue@3.2.37
-      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-aribnb-with-typescript
+      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-airbnb-with-typescript
       '@vue/tsconfig': 0.1.3_@types+node@16.11.48
       eslint: 8.21.0
       eslint-plugin-vue: 9.3.0_eslint@8.21.0
@@ -109,7 +109,7 @@ importers:
       '@types/node': ^16.11.48
       '@vitejs/plugin-vue': ^3.0.2
       '@vitejs/plugin-vue-jsx': ^2.0.0
-      '@vue/eslint-config-airbnb-with-typescript': workspace:^
+      '@vue/eslint-config-airbnb-with-typescript': workspace:*
       '@vue/tsconfig': ^0.1.3
       eslint: ^8.21.0
       eslint-plugin-vue: ^9.3.0
@@ -129,7 +129,7 @@ importers:
       '@types/node': 16.11.48
       '@vitejs/plugin-vue': 3.0.2_vite@3.0.6+vue@3.2.37
       '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.6+vue@3.2.37
-      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-aribnb-with-typescript
+      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-airbnb-with-typescript
       '@vue/tsconfig': 0.1.3_@types+node@16.11.48
       eslint: 8.21.0
       eslint-plugin-vue: 9.3.0_eslint@8.21.0
@@ -144,7 +144,7 @@ importers:
       '@types/node': ^16.11.48
       '@vitejs/plugin-vue': ^3.0.2
       '@vitejs/plugin-vue-jsx': ^2.0.0
-      '@vue/eslint-config-airbnb-with-typescript': workspace:^
+      '@vue/eslint-config-airbnb-with-typescript': workspace:*
       '@vue/tsconfig': ^0.1.3
       eslint: ^8.21.0
       eslint-plugin-vue: ^9.3.0
@@ -164,7 +164,7 @@ importers:
       '@types/node': 16.11.48
       '@vitejs/plugin-vue': 3.0.2_vite@3.0.6+vue@3.2.37
       '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.6+vue@3.2.37
-      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-aribnb-with-typescript
+      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-airbnb-with-typescript
       '@vue/tsconfig': 0.1.3_@types+node@16.11.48
       eslint: 8.21.0
       eslint-plugin-vue: 9.3.0_eslint@8.21.0
@@ -179,7 +179,7 @@ importers:
       '@types/node': ^16.11.48
       '@vitejs/plugin-vue': ^3.0.2
       '@vitejs/plugin-vue-jsx': ^2.0.0
-      '@vue/eslint-config-airbnb-with-typescript': workspace:^
+      '@vue/eslint-config-airbnb-with-typescript': workspace:*
       '@vue/tsconfig': ^0.1.3
       eslint: ^8.21.0
       eslint-plugin-vue: ^9.3.0
@@ -199,7 +199,7 @@ importers:
       '@types/node': 16.11.48
       '@vitejs/plugin-vue': 3.0.2_vite@3.0.6+vue@3.2.37
       '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.6+vue@3.2.37
-      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-aribnb-with-typescript
+      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-airbnb-with-typescript
       '@vue/tsconfig': 0.1.3_@types+node@16.11.48
       eslint: 8.21.0
       eslint-plugin-vue: 9.3.0_eslint@8.21.0
@@ -214,7 +214,7 @@ importers:
       '@types/node': ^16.11.48
       '@vitejs/plugin-vue': ^3.0.2
       '@vitejs/plugin-vue-jsx': ^2.0.0
-      '@vue/eslint-config-airbnb-with-typescript': workspace:^
+      '@vue/eslint-config-airbnb-with-typescript': workspace:*
       '@vue/tsconfig': ^0.1.3
       cypress: ^10.4.0
       eslint: ^8.21.0
@@ -237,7 +237,7 @@ importers:
       '@types/node': 16.11.48
       '@vitejs/plugin-vue': 3.0.2_vite@3.0.6+vue@3.2.37
       '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.6+vue@3.2.37
-      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-aribnb-with-typescript
+      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-airbnb-with-typescript
       '@vue/tsconfig': 0.1.3_@types+node@16.11.48
       cypress: 10.4.0
       eslint: 8.21.0
@@ -300,7 +300,7 @@ importers:
       '@vue/cli-plugin-unit-jest': 5.0.8_u3363d3n2hlivnpkvdcdhgu3le
       '@vue/cli-plugin-vuex': 5.0.8_@vue+cli-service@5.0.8
       '@vue/cli-service': 5.0.8_@babel+core@7.18.10
-      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-aribnb-with-typescript
+      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-airbnb-with-typescript
       '@vue/test-utils': 2.0.2_vue@3.2.37
       '@vue/vue3-jest': 27.0.0_oofd3wylngdhv7tkfn5lutj5nu
       babel-jest: 27.5.1_@babel+core@7.18.10
@@ -320,7 +320,7 @@ importers:
       '@vue/cli-plugin-eslint': ~5.0.8
       '@vue/cli-plugin-router': ~5.0.8
       '@vue/cli-service': ~5.0.8
-      '@vue/eslint-config-airbnb': workspace:^
+      '@vue/eslint-config-airbnb': workspace:*
       core-js: ^3.24.1
       eslint: ^8.21.0
       eslint-plugin-vue: ^9.3.0
@@ -371,7 +371,7 @@ importers:
       '@vue/cli-plugin-router': 5.0.8_@vue+cli-service@5.0.8
       '@vue/cli-plugin-typescript': 5.0.8_psczngltrtomgnzwlsglo5j62i
       '@vue/cli-service': 5.0.8_@babel+core@7.18.10
-      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-aribnb-with-typescript
+      '@vue/eslint-config-airbnb-with-typescript': link:../../packages/eslint-config-airbnb-with-typescript
       eslint: 8.21.0
       eslint-plugin-vue: 9.3.0_eslint@8.21.0
       typescript: 4.5.5
@@ -401,7 +401,7 @@ importers:
       eslint: 8.21.0
       eslint-plugin-vue: 9.3.0_eslint@8.21.0
 
-  packages/eslint-config-aribnb-with-typescript:
+  packages/eslint-config-airbnb-with-typescript:
     specifiers:
       '@typescript-eslint/eslint-plugin': ^5.33.0
       '@typescript-eslint/parser': ^5.33.0
@@ -6768,18 +6768,6 @@ packages:
       debug: 4.3.2
     dev: true
 
-  /follow-redirects/1.15.1_debug@4.3.4:
-    resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
-    engines: {node: '>=4.0'}
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
-    dependencies:
-      debug: 4.3.4
-    dev: true
-
   /forever-agent/0.6.1:
     resolution: {integrity: sha512-j0KLYPhm6zeac4lz3oJ3o65qvgQCcPubiyotZrXqEaG4hNagNYO8qdlUrX5vwqv9ohqeT/Z3j6+yW067yWWdUw==}
     dev: true
@@ -7282,7 +7270,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.1_debug@4.3.4
+      follow-redirects: 1.15.1_debug@4.3.2
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug

@@ -34,6 +34,11 @@ module.exports = {
 }
 ```
 
+## Aliases
+
+This ruleset automatically reads the [TypeScript path mappings](https://www.typescriptlang.org/tsconfig#paths) from `**/tsconfig.json` and `**/tsconfig.*.json` files in the project. You don't need any additional configuration to set up aliases.
+If your TSConfig files are in a different location, please refer to the [Non-Conventional TSConfig Locations](#non-conventional-tsconfig-locations) section.
+
 ## JS Support in `.vue` Files
 
 By default this ruleset only allows using `<script lang="ts">` (and `<script setup lang="ts">`) in `.vue` files.

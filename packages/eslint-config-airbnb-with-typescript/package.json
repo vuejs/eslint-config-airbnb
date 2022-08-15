@@ -1,6 +1,6 @@
 {
   "name": "@vue/eslint-config-airbnb-with-typescript",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "eslint-config-airbnb for Vue.js projects with TypeScript support",
   "main": "index.js",
   "exports": {

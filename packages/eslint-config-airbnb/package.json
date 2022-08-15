@@ -1,13 +1,12 @@
 {
   "name": "@vue/eslint-config-airbnb",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "eslint-config-standard for Vue.js projects",
   "main": "index.js",
   "exports": {
     ".": "./index.js",
     "./createAliasSetting": "./createAliasSetting.js",
     "./package.json": "./package.json",
-
     "./rules/imports": "./rules/imports.js",
     "./rules/jsx": "./rules/jsx.js",
     "./rules/jsx-a11y": "./rules/jsx-a11y.js",

@@ -7,7 +7,13 @@
     ".": "./index.js",
     "./createAliasSetting": "./createAliasSetting.js",
     "./package.json": "./package.json",
-    "./rules/imports": "./rules/imports.js"
+
+    "./rules/imports": "./rules/imports.js",
+    "./rules/jsx": "./rules/jsx.js",
+    "./rules/jsx-a11y": "./rules/jsx-a11y.js",
+    "./rules/template": "./rules/template.js",
+    "./rules/template-a11y": "./rules/template-a11y.js",
+    "./rules/misc": "./rules/misc.js"
   },
   "publishConfig": {
     "access": "public"

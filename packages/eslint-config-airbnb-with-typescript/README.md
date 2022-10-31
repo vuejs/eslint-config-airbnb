@@ -39,7 +39,7 @@ module.exports = {
 This ruleset automatically reads the [TypeScript path mappings](https://www.typescriptlang.org/tsconfig#paths) from `**/tsconfig.json` and `**/tsconfig.*.json` files in the project. You don't need any additional configuration to set up aliases.
 If your TSConfig files are in a different location, please refer to the [Non-Conventional TSConfig Locations](#non-conventional-tsconfig-locations) section.
 
-## JS Support in `.vue` Files
+## Using Plain JS in `.vue` Files (NOT Recommended)
 
 By default this ruleset only allows using `<script lang="ts">` (and `<script setup lang="ts">`) in `.vue` files.
 
@@ -63,7 +63,7 @@ module.exports = {
 
 If you encounter any `no-undef` errors when using global variables/functions, please configure [the `env` option for ESLint](https://eslint.org/docs/latest/user-guide/configuring/language-options#specifying-environments).
 
-## TSX/JSX Support in `.vue` Files
+## Using TSX/JSX in `.vue` Files (Strongly NOT Recommended)
 
 There's a limitation in `@typescript-eslint/parser` that it cannot parse JSX syntaxes in `.vue` files *when `parserOptions.project` is set*.
 

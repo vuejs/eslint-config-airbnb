@@ -1,5 +1,13 @@
 # @vue/eslint-config-airbnb
 
+## 7.0.1
+
+### Patch Changes
+
+- fix: remove `vue/no-setup-props-destructure` rule (#59)
+
+  It's deprecated and removed from `eslint-plugin-vue`'s preset configs since v9.17. More discussions available at https://github.com/vuejs/eslint-plugin-vue/issues/2259
+
 ## 7.0.0
 
 ### Major Changes

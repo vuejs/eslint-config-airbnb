@@ -1,5 +1,12 @@
 # @vue/eslint-config-airbnb-with-typescript
 
+## 7.0.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @vue/eslint-config-airbnb@7.0.1
+
 ## 7.0.0
 
 ### Major Changes
@@ -12,4 +19,3 @@
   For example, by default, only `<script lang="ts">` is allowed in `.vue` files.
   You can opt-in the `@vue/eslint-config-airbnb-with-typescript/allow-js-in-vue` config to allow plain JavaScript `<script>`s.
   It is strongly discouraged to use JSX and TSX syntaxes in `.vue` files, but we still provide corresponding configs to allow you opt-in them.
-

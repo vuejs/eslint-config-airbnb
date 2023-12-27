@@ -1,8 +1,16 @@
-const { rules: baseStyleRules } = require('eslint-config-airbnb-base/rules/style');
+const baseRules = {
+  ...require('eslint-config-airbnb-base/rules/best-practices').rules,
+  ...require('eslint-config-airbnb-base/rules/errors').rules,
+  ...require('eslint-config-airbnb-base/rules/node').rules,
+  ...require('eslint-config-airbnb-base/rules/style').rules,
+  ...require('eslint-config-airbnb-base/rules/variables').rules,
+  ...require('eslint-config-airbnb-base/rules/es6').rules,
+  ...require('eslint-config-airbnb-base/rules/strict').rules,
+}
 
 // Most extension rules in `eslint-plugin-vue` are only wrapped core ESLint rules
 // Except for `max-len` and `no-irregular-whitespace`, which are replacements.
-const styleRulesToExtend = [
+const baseRulesToExtend = [
   'array-bracket-newline',
   'array-bracket-spacing',
   'arrow-spacing',
@@ -38,21 +46,21 @@ const styleRulesToExtend = [
   'template-curly-spacing',
 ];
 
-const styleRulesToReplace = [
+const baseRulesToReplace = [
   'max-len',
   'no-irregular-whitespace',
 ];
 
-const vueStyleRules = {};
-styleRulesToExtend.forEach((name) => {
-  if (baseStyleRules[name]) {
-    vueStyleRules[`vue/${name}`] = baseStyleRules[name];
+const vueTemplateRules = {};
+baseRulesToExtend.forEach((name) => {
+  if (baseRules[name]) {
+    vueTemplateRules[`vue/${name}`] = baseRules[name];
   }
 });
-styleRulesToReplace.forEach((name) => {
-  if (baseStyleRules[name]) {
-    vueStyleRules[name] = 'off'; // disable the original rule
-    vueStyleRules[`vue/${name}`] = baseStyleRules[name];
+baseRulesToReplace.forEach((name) => {
+  if (baseRules[name]) {
+    vueTemplateRules[name] = 'off'; // disable the original rule
+    vueTemplateRules[`vue/${name}`] = baseRules[name];
   }
 });
 
@@ -61,7 +69,7 @@ module.exports = {
 
   rules: {
     // Apply the style rules in airbnb to expressions in `<template>` too.
-    ...vueStyleRules,
+    ...vueTemplateRules,
 
     // `vue/max-len` needs special configuration for better usability
     'vue/max-len': ['error', 100, 2, {

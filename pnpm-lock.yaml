@@ -571,8 +571,8 @@ importers:
         specifier: ^7.33.2
         version: 7.33.2(eslint@8.56.0)
       eslint-plugin-vuejs-accessibility:
-        specifier: ^1.2.0
-        version: 1.2.0(eslint@8.56.0)
+        specifier: ^2.0.0
+        version: 2.2.0(eslint@8.56.0)
       vue-eslint-parser:
         specifier: ^9.3.2
         version: 9.3.2(eslint@8.56.0)
@@ -6808,8 +6808,9 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-vuejs-accessibility@1.2.0(eslint@8.56.0):
-    resolution: {integrity: sha512-wF7kT22lS2VOmIpDeI65bnFFKFgESEEpI+CWKr43mdfDRywA4sCk7cKhtZsvfbPOtKO0GDlnpFxZbOIGsFn7IQ==}
+  /eslint-plugin-vuejs-accessibility@2.2.0(eslint@8.56.0):
+    resolution: {integrity: sha512-/Dr02rkrBU/mDE4+xO8/9Y230mC9ZTkh2U5tJHEFHxw/CldccmVCWgWs4NM1lq+Bbu9bJzwJPHOsZ+o5wIQuOA==}
+    engines: {node: '>=16.0.0'}
     peerDependencies:
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:

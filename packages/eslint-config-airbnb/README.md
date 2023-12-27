@@ -56,7 +56,7 @@ module.exports = {
   ],
   rules: {
     'import/no-unresolved': 'error'
-  }
+  },
   settings: {
     ...createAliasSetting({
       '@': `${path.resolve(__dirname, './src')}`

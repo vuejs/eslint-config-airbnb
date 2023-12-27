@@ -53,7 +53,7 @@ require("@rushstack/eslint-patch/modern-module-resolution")
 
 module.exports = {
   root: true,
-  extens: [
+  extends: [
     'plugin:vue/vue3-essential',
     '@vue/eslint-config-airbnb-with-typescript'
     '@vue/eslint-config-airbnb-with-typescript/allow-js-in-vue'
@@ -115,7 +115,7 @@ const createAliasSetting = require('@vue/eslint-config-airbnb-with-typescript/cr
 
 module.exports = {
   root: true,
-  extens: [
+  extends: [
     'plugin:vue/vue3-essential',
     '@vue/eslint-config-airbnb-with-typescript'
   ],

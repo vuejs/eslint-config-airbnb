@@ -7,26 +7,27 @@
     "build": "run-p type-check build-only",
     "preview": "vite preview --port 4173",
     "build-only": "vite build",
-    "type-check": "vue-tsc --noEmit",
+    "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "pinia": "^2.0.18",
-    "vue": "^3.2.37",
-    "vue-router": "^4.1.3"
+    "pinia": "^2.1.7",
+    "vue": "^3.3.13",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.1.4",
-    "@types/node": "^16.11.48",
-    "@vitejs/plugin-vue": "^3.0.2",
-    "@vitejs/plugin-vue-jsx": "^2.0.0",
+    "@rushstack/eslint-patch": "^1.6.1",
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.10.5",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
     "@vue/eslint-config-airbnb-with-typescript": "workspace:*",
-    "@vue/tsconfig": "^0.4.0",
-    "eslint": "^8.21.0",
-    "eslint-plugin-vue": "^9.3.0",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.19.2",
     "npm-run-all": "^4.1.5",
-    "typescript": "~4.7.4",
-    "vite": "^3.0.6",
-    "vue-tsc": "^0.39.5"
+    "typescript": "~5.3.3",
+    "vite": "^5.0.10",
+    "vue-tsc": "^1.8.27"
   }
 }

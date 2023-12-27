@@ -32,15 +32,15 @@
   },
   "homepage": "https://github.com/vuejs/eslint-config-airbnb/blob/main/packages/eslint-config-airbnb-with-typescript#readme",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.13.1",
-    "@typescript-eslint/parser": "^6.13.1",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
     "@vue/eslint-config-airbnb": "workspace:^",
     "eslint-config-airbnb-typescript": "17.1.0",
-    "eslint-define-config": "^1.6.0",
-    "eslint-import-resolver-node": "^0.3.6",
-    "eslint-import-resolver-typescript": "^3.4.0",
-    "eslint-plugin-import": "^2.26.0",
-    "vue-eslint-parser": "^9.0.3"
+    "eslint-define-config": "^1.24.1",
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "vue-eslint-parser": "^9.3.2"
   },
   "peerDependencies": {
     "eslint": "^8.2.0",
@@ -48,9 +48,9 @@
     "typescript": "*"
   },
   "devDependencies": {
-    "eslint": "^8.21.0",
-    "eslint-plugin-vue": "^9.3.0",
-    "typescript": "~5.3.2"
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.19.2",
+    "typescript": "~5.3.3"
   },
   "eslintConfig": {
     "extends": "@vue/airbnb"

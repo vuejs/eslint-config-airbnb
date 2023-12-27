@@ -1,4 +1,8 @@
 const { defineConfig } = require('eslint-define-config');
+
+/// <reference types="@eslint-types/typescript-eslint" />
+/// <reference types="@eslint-types/import" />
+
 const upstreamConfig = require('eslint-config-airbnb-typescript/lib/shared');
 
 // There are two categories of TS rules in the upstream config:

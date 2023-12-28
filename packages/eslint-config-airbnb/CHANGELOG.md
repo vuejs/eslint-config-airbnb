@@ -1,5 +1,11 @@
 # @vue/eslint-config-airbnb
 
+## 8.0.0
+
+### Major Changes
+
+- Apply more airbnb rules to vue template
+
 ## 7.0.1
 
 ### Patch Changes

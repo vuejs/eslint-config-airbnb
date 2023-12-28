@@ -1,5 +1,16 @@
 # @vue/eslint-config-airbnb-with-typescript
 
+## 8.0.0
+
+### Major Changes
+
+- Upgrade to @typescript-eslint v6
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @vue/eslint-config-airbnb@8.0.0
+
 ## 7.0.1
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@vue/eslint-config-airbnb",
-  "version": "7.0.1",
+  "version": "8.0.0",
   "description": "eslint-config-standard for Vue.js projects",
   "main": "index.js",
   "exports": {

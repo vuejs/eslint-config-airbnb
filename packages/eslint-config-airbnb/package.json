@@ -44,14 +44,14 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-vuejs-accessibility": "^2.0.0",
-    "vue-eslint-parser": "^9.3.2"
+    "vue-eslint-parser": "^10.2.0"
   },
   "peerDependencies": {
-    "eslint": "^8.2.0",
-    "eslint-plugin-vue": "^9.2.0"
+    "eslint": "^8.57.1",
+    "eslint-plugin-vue": "^10.5.1"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "eslint-plugin-vue": "^9.19.2"
+    "eslint": "^8.57.1",
+    "eslint-plugin-vue": "^10.5.1"
   }
 }

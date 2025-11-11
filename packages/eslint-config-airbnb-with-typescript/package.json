@@ -34,24 +34,24 @@
   "dependencies": {
     "@eslint-types/import": "2.29.0-1",
     "@eslint-types/typescript-eslint": "^6.12.0",
-    "@typescript-eslint/eslint-plugin": "^6.16.0",
-    "@typescript-eslint/parser": "^6.16.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
     "@vue/eslint-config-airbnb": "workspace:^",
-    "eslint-config-airbnb-typescript": "17.1.0",
+    "eslint-config-airbnb-typescript": "18.0.0",
     "eslint-define-config": "^2.0.0",
     "eslint-import-resolver-node": "^0.3.9",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
-    "vue-eslint-parser": "^9.3.2"
+    "vue-eslint-parser": "^10.2.0"
   },
   "peerDependencies": {
-    "eslint": "^8.2.0",
-    "eslint-plugin-vue": "^9.2.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-vue": "^10.5.1",
     "typescript": "*"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "eslint-plugin-vue": "^9.19.2",
+    "eslint": "^8.57.1",
+    "eslint-plugin-vue": "^10.5.1",
     "typescript": "~5.3.3"
   },
   "eslintConfig": {

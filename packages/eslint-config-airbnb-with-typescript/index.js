@@ -147,7 +147,17 @@ module.exports = defineConfig({
     // So we add the following rule,
     // to avoid the error "The file must be included in at least one of the projects provided",
     {
-      files: ['.eslintrc.*js', 'babel.config.*js', 'vue.config.*js'],
+      files: [
+        '.eslintrc.*js',
+        'babel.config.*js',
+        'vue.config.*js',
+        'vite.config.*',
+        'vitest.config.*',
+        'cypress.config.*',
+        'nightwatch.conf.*',
+        'playwright.config.*',
+        'eslint.config.*',
+      ],
       parser: 'espree',
       env: {
         node: true,
